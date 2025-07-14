@@ -123,3 +123,8 @@ SELECT
 FROM v_objet_detail v
 JOIN final_images_objet i ON v.id_objet = i.id_objet;
 
+INSERT INTO final_emprunt (id_objet, id_membre, date_emprunt, date_retour) 
+VALUES (40, 5, '2023-10-25', '2023-10-30' );
+
+ALTER TABLE final_membre
+ADD COLUMN etat INT DEFAULT 1;

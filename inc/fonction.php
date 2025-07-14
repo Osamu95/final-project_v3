@@ -173,4 +173,23 @@ ini_set("display error", "1");
         }
     }
 
+    function lister_emprunt($id){
+        $sql = "select e.id_emprunt, e.id_objet, nom_objet from final_emprunt as e
+        join final_objet as o on o.id_objet = e.id_objet
+        where e.id_membre = $id and e.date_retour is not null";
+        $result = mysqli_query(dbconnect(), $sql);
+        //echo $sql;
+        
+        if ($result){
+            $liste = [];
+            while ($row = mysqli_fetch_assoc($result)){
+                $liste[]= $row;
+            } 
+            return $liste;
+        }else{
+            $liste = [];
+            return $liste;
+        }
+    }
+
 ?>

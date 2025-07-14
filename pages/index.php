@@ -1,4 +1,4 @@
-<?php  $_SESSION['emprunt']=[][] ?>
+<?php  $_SESSION['emprunt'];?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

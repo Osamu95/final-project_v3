@@ -20,6 +20,9 @@
             <a class="nav-link" aria-current="page" href="modele.php?page=formulaire.php">Ajouter un objet</a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="modele.php?page=membre.php">Membre</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" aria-current="page" href="../inc/connect/deconnect.php">Deconnexion</a>
         </li>
     </ul>
