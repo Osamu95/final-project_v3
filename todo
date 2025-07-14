@@ -1,0 +1,35 @@
+to do 
+version 1 
+    création base de données 
+        - tables: membre, catégorie_objet, objet,image_objet, emprunt
+        insérer les données test (anjara) [ok]
+        -> ne pas oublier d'insérer dans bd itu
+
+index.php [OK]
+    html
+        formulaire d'inscription pour membre
+        -> input pour tous les champs 
+        formulaire de connexion si déjà membre
+        -> adresse mail et mdp
+    php
+        traitement1
+        fonction verify_user (si adresse mail et mdp existent = connexion)
+        sinon adduser (prendre les infos -> add) 
+
+liste des objets [OK]
+    html
+        tableau 
+    php
+        fonction show_objets (select *) 
+        vérifier si emprunt en cours, date de retour = null -> afficher sinon disponible 
+
+filtre 
+    html [OK]
+        mettre les catégories dans un dropdown
+    php 
+        traitement2
+        catégorie selectionnee -> afficher les objets de la catégorie 
+
+        alea
+            emprunter avec choix de duré d'emprunt
+            afficher disponible jusqu'à le 
